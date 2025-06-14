@@ -1,14 +1,14 @@
 let modInfo = {
 	name: "The Point Tree",
 	id: "ThepointTreeRD82",
-	author: "randim82",
+	author: "randim82, SmilyNarwhal77",
 	pointsName: "Point Fragments",
 	modFiles: ["basic.js", "rebirth.js", "prestige.js", "mega.js", "sacrifice.js", "energy.js", "achievements.js", "infobox.js", "supreme.js", "water.js", "secretAchievement.js", "mastery.js", "tree.js", "era.js", "cells.js"],
 
 	discordName: "SR46A",
 	discordLink: "",
 	initialStartPoints: new Decimal(0), // Used for hard resets and new players
-	offlineLimit: 0.5,  // In hours
+	offlineLimit: 8760,  // In hours
 	// remember to change to 0 in dev
 }
 
@@ -19,6 +19,9 @@ let VERSION = {
 }
 
 let changelog = `<h1>Changelog:</h1><br>
+<h2>v3.5.51.1: Offline Limit Changed</h2><br>
+You can now go offline for a year with the comfort of knowing that you can earn lots<br>
+
 <h2>v3.5.51: Bug Fixes </h2><br>
 Added 100K event to v3.5.5 changelog <br>
 Fixed a bug with Minigame Part 6 regarding the ^e500K button not showing <br>
@@ -1231,6 +1234,7 @@ function isEndgame() {
 
 // Style for the background, can be a function
 var backgroundStyle = {
+	
 
 }
 
